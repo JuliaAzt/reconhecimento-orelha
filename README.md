@@ -7,7 +7,8 @@
 [bag,testSet,trainingSet] = exeSurf();
 
 Para ler as imagens segmentadas deve-se mudar a extensão do arquivo de leitura na função :
-De .jpg para .png, 
+De .jpg para .png
+
 imds = imageDatastore(setDir,'IncludeSubfolders', true, 'FileExtensions', '.jpg','LabelSource','foldernames');
 
 
