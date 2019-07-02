@@ -13,6 +13,7 @@ imds = imageDatastore(setDir,'IncludeSubfolders', true, 'FileExtensions', '.jpg'
 
 
 (3) A função exeSurf2 - classifica os pontos extraidos.
+
 exeSurf2(bag,testSet,trainingSet);
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
