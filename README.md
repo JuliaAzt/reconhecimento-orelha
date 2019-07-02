@@ -18,12 +18,17 @@ exeSurf2(bag,testSet,trainingSet);
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Para executar com as imagens normais basta usar:
+
 1º - [bag,testSet,trainingSet] = exeSurf();
+
 2º - exeSurf2(bag,testSet,trainingSet);
 
 Para executar com as imagens segmentadas basta usar:
+
 1º - teste()
+
 2º - [bag,testSet,trainingSet] = exeSurf(); //mudar parametro da função imageDatastore, comom dito no item (2)
+
 3º - exeSurf2(bag,testSet,training)
 
 Obs.: para executar essas funções é necessário mudar o caminho do repositório para seu repósitorio atual, nas funções teste(1) e exeSurf(2).
