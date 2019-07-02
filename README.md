@@ -28,7 +28,7 @@ Para executar com as imagens segmentadas basta usar:
 
 1º - teste()
 
-2º - [bag,testSet,trainingSet] = exeSurf(); //mudar parametro da função imageDatastore, comom dito no item (2)
+2º - [bag,testSet,trainingSet] = exeSurf(); //mudar parametro da função imageDatastore, como dito no item (2)
 
 3º - exeSurf2(bag,testSet,training)
 
