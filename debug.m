@@ -1,13 +1,11 @@
-function [bag,testSetImages,setImages] = exeSurf()
-   
-
+function nimg = debug()
 setDir = 'C:/Users/jhuli/Desktop/Computacao/Quinto/PDI/Artigos2/tp/implementacao/awe/awe/';
 
  
  imds = imageDatastore(setDir,'IncludeSubfolders', true, 'FileExtensions', '.jpg','LabelSource','foldernames');
  
  [trainingSet,testSet] = splitEachLabel(imds, 0.9,'randomize', 'Include')
-
+ n = size(trainingSet.Files);
  trainingSet2 = imageSet(trainingSet.Files);
  vet = 9*ones(1,99);
 
@@ -17,19 +15,7 @@ setDir = 'C:/Users/jhuli/Desktop/Computacao/Quinto/PDI/Artigos2/tp/implementacao
  for i=1:100
       setImages(i).Description = char(trainingSet.Labels(k)) ;
       k= k+9;
+      setImages(i).ImageLocation
  end
  
  
- testSet2 =  imageSet(testSet.Files);
- vet2 = ones(1,10);
- [testSetImages(1),testSetImages(2),testSetImages(3),testSetImages(4),testSetImages(5),testSetImages(6),testSetImages(7),testSetImages(8),testSetImages(9),testSetImages(10)] = partition(testSet2, vet2);
- 
- for i=1:10
-   
-    testSetImages(i).Description = char(testSet.Labels(i));
-    
- end
-
-    bag = bagOfFeatures(setImages);
-
-end
